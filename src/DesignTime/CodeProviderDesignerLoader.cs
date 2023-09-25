@@ -35,12 +35,6 @@ using System.ComponentModel.Design.Serialization;
 using System.IO;
 using System.Windows.Forms.Design;
 
-
-#if WITH_MONO_DESIGN
-using Mono.Design;
-using CodeDomDesignerLoader = Mono.Design.CodeDomDesignerLoader;
-#endif
-
 namespace mwf_designer
 {
 	internal class CodeProviderDesignerLoader : CodeDomDesignerLoader

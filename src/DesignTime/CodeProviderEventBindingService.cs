@@ -31,11 +31,6 @@ using System.Collections;
 using System.ComponentModel;
 using System.ComponentModel.Design;
 
-#if WITH_MONO_DESIGN
-using Mono.Design;
-using EventBindingService = Mono.Design.EventBindingService;
-#endif
-
 namespace mwf_designer
 {
 	internal class CodeProviderEventBindingService : EventBindingService

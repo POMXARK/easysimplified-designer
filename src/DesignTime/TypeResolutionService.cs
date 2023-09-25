@@ -32,10 +32,6 @@ using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Reflection;
 
-#if WITH_MONO_DESIGN
-using Mono.Design;
-#endif
-
 namespace mwf_designer
 {
 	internal class TypeResolutionService : ITypeResolutionService
