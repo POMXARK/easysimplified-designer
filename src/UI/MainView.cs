@@ -38,13 +38,6 @@ using System.Windows.Forms;
 using System.IO;
 using System.Reflection;
 
-#if WITH_MONO_DESIGN
-using Mono.Design;
-using DocumentDesigner = Mono.Design.DocumentDesigner;
-using UndoEngine = Mono.Design.UndoEngine;
-using MenuCommandService = Mono.Design.MenuCommandService;
-#endif
-
 namespace mwf_designer
 {
 	public partial class MainView : Form
