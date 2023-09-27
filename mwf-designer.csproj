@@ -110,8 +110,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChangeLog.txt" />
-    <Content Include="LICENSE.txt" />
-    <Content Include="README.txt" />
+    <Content Include="docs\LICENSE.txt" />
+    <Content Include="docs\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
