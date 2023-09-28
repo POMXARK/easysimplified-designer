@@ -16,8 +16,8 @@ jobs:
     steps:
     - name: Dependencies
       run: |
-        apt-get update
-        apt-get install -y sudo        
+        # apt-get update
+        # apt-get install -y sudo        
         sudo apt-get update
         # Install mono and msbuild
         sudo apt install ca-certificates gnupg
