@@ -1,4 +1,4 @@
-This is an effort to get the [mwf-designer](https://github.com/mono/mwf-designer) work again.
+easysimplified-designer is an effort to get the [mwf-designer](https://github.com/mono/mwf-designer) work again.
 
 #### Current Status
 
