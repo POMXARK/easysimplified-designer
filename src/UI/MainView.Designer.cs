@@ -52,8 +52,8 @@ namespace mwf_designer
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.surfaceTabs = new System.Windows.Forms.TabControl();
             this.toolbox = new mwf_designer.ToolBoxList();
+            this.surfaceTabs = new System.Windows.Forms.TabControl();
             this.propertyGrid = new mwf_designer.PropertyGrid();
             this.mainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -77,7 +77,7 @@ namespace mwf_designer
             this.helpToolStripMenuItem});
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
-            this.mainMenu.Size = new System.Drawing.Size(1244, 35);
+            this.mainMenu.Size = new System.Drawing.Size(1244, 33);
             this.mainMenu.TabIndex = 0;
             this.mainMenu.Text = "menuStrip1";
             // 
@@ -221,13 +221,13 @@ namespace mwf_designer
             // alignToolStripMenuItem
             // 
             this.alignToolStripMenuItem.Name = "alignToolStripMenuItem";
-            this.alignToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.alignToolStripMenuItem.Size = new System.Drawing.Size(155, 34);
             this.alignToolStripMenuItem.Text = "Align";
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(270, 34);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(155, 34);
             this.toolStripMenuItem5.Text = ".....";
             // 
             // helpToolStripMenuItem
@@ -241,7 +241,7 @@ namespace mwf_designer
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(164, 34);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -249,7 +249,7 @@ namespace mwf_designer
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 35);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 33);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -260,8 +260,8 @@ namespace mwf_designer
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.propertyGrid);
-            this.splitContainer1.Size = new System.Drawing.Size(1244, 723);
-            this.splitContainer1.SplitterDistance = 1039;
+            this.splitContainer1.Size = new System.Drawing.Size(1244, 725);
+            this.splitContainer1.SplitterDistance = 1037;
             this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -280,20 +280,10 @@ namespace mwf_designer
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.surfaceTabs);
-            this.splitContainer2.Size = new System.Drawing.Size(1039, 723);
+            this.splitContainer2.Size = new System.Drawing.Size(1037, 725);
             this.splitContainer2.SplitterDistance = 208;
             this.splitContainer2.SplitterWidth = 6;
             this.splitContainer2.TabIndex = 0;
-            // 
-            // surfaceTabs
-            // 
-            this.surfaceTabs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.surfaceTabs.Location = new System.Drawing.Point(0, 0);
-            this.surfaceTabs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.surfaceTabs.Name = "surfaceTabs";
-            this.surfaceTabs.SelectedIndex = 0;
-            this.surfaceTabs.Size = new System.Drawing.Size(825, 723);
-            this.surfaceTabs.TabIndex = 0;
             // 
             // toolbox
             // 
@@ -303,8 +293,18 @@ namespace mwf_designer
             this.toolbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.toolbox.Name = "toolbox";
             this.toolbox.SelectedCategory = null;
-            this.toolbox.Size = new System.Drawing.Size(208, 723);
+            this.toolbox.Size = new System.Drawing.Size(208, 725);
             this.toolbox.TabIndex = 0;
+            // 
+            // surfaceTabs
+            // 
+            this.surfaceTabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.surfaceTabs.Location = new System.Drawing.Point(0, 0);
+            this.surfaceTabs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.surfaceTabs.Name = "surfaceTabs";
+            this.surfaceTabs.SelectedIndex = 0;
+            this.surfaceTabs.Size = new System.Drawing.Size(823, 725);
+            this.surfaceTabs.TabIndex = 0;
             // 
             // propertyGrid
             // 
@@ -312,7 +312,7 @@ namespace mwf_designer
             this.propertyGrid.Location = new System.Drawing.Point(0, 0);
             this.propertyGrid.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.propertyGrid.Name = "propertyGrid";
-            this.propertyGrid.Size = new System.Drawing.Size(199, 723);
+            this.propertyGrid.Size = new System.Drawing.Size(201, 725);
             this.propertyGrid.TabIndex = 0;
             // 
             // MainView
@@ -325,7 +325,7 @@ namespace mwf_designer
             this.MainMenuStrip = this.mainMenu;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainView";
-            this.Text = "MWF Designer";
+            this.Text = "easysimplified Designer";
             this.mainMenu.ResumeLayout(false);
             this.mainMenu.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);

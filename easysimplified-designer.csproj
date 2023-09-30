@@ -7,8 +7,8 @@
     <ProjectGuid>{E8A1D7EA-AB41-4908-8715-F76FC155A164}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>mwf_designer</RootNamespace>
-    <AssemblyName>mwf-designer</AssemblyName>
+    <RootNamespace>easysimplified_designer</RootNamespace>
+    <AssemblyName>easysimplified-designer</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>2.0</OldToolsVersion>
