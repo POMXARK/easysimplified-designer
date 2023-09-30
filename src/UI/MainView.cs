@@ -239,5 +239,11 @@ namespace mwf_designer
 					menuCommands.FindCommand (StandardCommands.Delete).Invoke ();
 			}
 		}
-	}
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            src.UI.Formabout fabout = new src.UI.Formabout();
+            fabout.ShowDialog();
+        }
+    }
 }
