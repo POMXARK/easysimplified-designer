@@ -1,3 +1,9 @@
+2023-09-30 (beta) MakiWolf
+	Warning: Features listed here may or may not make a final release
+	* Fork of the project mwf-designer
+	* remove Mono.Design
+	* add about form
+
 2009-09-09  Ivan N. Zlatev  <contact@i-nz.net>
 
 	* Remove unneeded Toolbox code. We now support proper point-resize-click 
