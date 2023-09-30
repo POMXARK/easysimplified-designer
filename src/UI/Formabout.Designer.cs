@@ -39,9 +39,9 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(456, 46);
+            this.textBox1.Size = new System.Drawing.Size(695, 46);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "This is an effort to get the mwf-designer work again.";
+            this.textBox1.Text = "easysimplified-designer is an effort to get the mwf-designer work again.";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // linkLabel1
@@ -64,7 +64,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.textBox1);
             this.Name = "Formabout";
-            this.Text = "Form1";
+            this.Text = "about";
             this.ResumeLayout(false);
             this.PerformLayout();
 
