@@ -9,7 +9,7 @@ The fork has removed Mono.Design to compile again.
 
 make && make run
 
-### CI mainfest Ubuntu
+##### CI mainfest Ubuntu
 Take also a look at [the CI manifest](/.github/workflows/ubuntu.yml).
 
 === Windows with Visual Studio ===
