@@ -3,3 +3,4 @@ deps/Mono.Design/.generated
 deps/Mono.Design/class/
 .vs
 obj/Debug
+packages
