@@ -145,6 +145,7 @@
     <None Include="app.config" />
     <None Include="Makefile" />
     <None Include="packages.config" />
+    <None Include="winbuilddebug.bat" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChangeLog.txt" />

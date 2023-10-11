@@ -9,9 +9,13 @@ The fork has removed Mono.Design to compile again.
 
 make && make run
 
-=== On Microsoft .NET with Visual Studio ===
+=== Windows with Visual Studio ===
 
 Open mwf-designer.sln with Visual Studio and you are done!
+
+=== Windows without Visual Studio ===
+
+run winbuilddebug.bat
 
 #### Also note:
 This repositority used ICSharpCode.NRefactory.dll under deps since its beginning.
