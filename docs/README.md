@@ -12,6 +12,8 @@ make && make run
 ##### CI mainfest Ubuntu
 Take also a look at [the CI manifest](/.github/workflows/ubuntu.yml).
 
+you can also use build.sh to use mono msbuild on linux
+
 === Windows with Visual Studio ===
 
 Open mwf-designer.sln with Visual Studio and you are done!
