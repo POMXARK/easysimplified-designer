@@ -9,8 +9,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  my_job:
-    name: deploy to staging
+  ubuntu2204:
+    name: ubuntu2204
     runs-on: ubuntu-22.04
 
     steps:
