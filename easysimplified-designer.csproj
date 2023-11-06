@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -37,10 +37,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ICSharpCode.NRefactory, Version=2.2.1.2648, Culture=neutral, PublicKeyToken=efe927acf176eea2, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>deps\ICSharpCode.NRefactory.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Cecil, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
       <HintPath>packages\Mono.Cecil.0.11.5\lib\net40\Mono.Cecil.dll</HintPath>
     </Reference>
@@ -124,12 +120,243 @@
     <Compile Include="src\UI\ToolBoxList\ToolBoxListItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\SnippetParser.cs">
+      <Link>Src\SnippetParser.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Location.cs">
+      <Link>Src\Location.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\IAstVisitor.cs">
+      <Link>Src\IAstVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\ParserFactory.cs">
+      <Link>Src\ParserFactory.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\EnvironmentInformationProvider.cs">
+      <Link>Src\EnvironmentInformationProvider.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Visitors\AbstractAstTransformer.cs">
+      <Link>Src\Visitors\AbstractAstTransformer.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Visitors\CodeDOMVerboseOutputGenerator.cs">
+      <Link>Src\Visitors\CodeDOMVerboseOutputGenerator.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Visitors\CodeDOMOutputVisitor.cs">
+      <Link>Src\Visitors\CodeDOMOutputVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Visitors\AbstractASTVisitor.cs">
+      <Link>Src\Visitors\AbstractASTVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Visitors\ToCSharpConvertVisitor.cs">
+      <Link>Src\Visitors\ToCSharpConvertVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Visitors\CSharpToVBNetConvertVisitor.cs">
+      <Link>Src\Visitors\CSharpToVBNetConvertVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Visitors\NodeTrackingAstVisitor.cs">
+      <Link>Src\Visitors\NodeTrackingAstVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Visitors\ToVBNetConvertVisitor.cs">
+      <Link>Src\Visitors\ToVBNetConvertVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Visitors\CSharpConstructsVisitor.cs">
+      <Link>Src\Visitors\CSharpConstructsVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Visitors\PrefixFieldsVisitor.cs">
+      <Link>Src\Visitors\PrefixFieldsVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Visitors\VBNetConstructsConvertVisitor.cs">
+      <Link>Src\Visitors\VBNetConstructsConvertVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Visitors\LookupTableVisitor.cs">
+      <Link>Src\Visitors\LookupTableVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Visitors\VBNetToCSharpConvertVisitor.cs">
+      <Link>Src\Visitors\VBNetToCSharpConvertVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\ILexer.cs">
+      <Link>Src\Lexer\ILexer.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\Token.cs">
+      <Link>Src\Lexer\Token.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\AbstractLexer.cs">
+      <Link>Src\Lexer\AbstractLexer.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\LookupTable.cs">
+      <Link>Src\Lexer\LookupTable.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\CSharp\Keywords.cs">
+      <Link>Src\Lexer\CSharp\Keywords.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\CSharp\Tokens.cs">
+      <Link>Src\Lexer\CSharp\Tokens.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\CSharp\Lexer.cs">
+      <Link>Src\Lexer\CSharp\Lexer.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\VBNet\Keywords.cs">
+      <Link>Src\Lexer\VBNet\Keywords.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\VBNet\Tokens.cs">
+      <Link>Src\Lexer\VBNet\Tokens.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\VBNet\Lexer.cs">
+      <Link>Src\Lexer\VBNet\Lexer.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\Special\SpecialTracker.cs">
+      <Link>Src\Lexer\Special\SpecialTracker.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\Special\BlankLine.cs">
+      <Link>Src\Lexer\Special\BlankLine.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\Special\Comment.cs">
+      <Link>Src\Lexer\Special\Comment.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\Special\ISpecial.cs">
+      <Link>Src\Lexer\Special\ISpecial.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\Special\CommentType.cs">
+      <Link>Src\Lexer\Special\CommentType.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\Special\PreProcessingDirective.cs">
+      <Link>Src\Lexer\Special\PreProcessingDirective.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\Special\TagComment.cs">
+      <Link>Src\Lexer\Special\TagComment.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\Errors.cs">
+      <Link>Src\Parser\Errors.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\ModifierList.cs">
+      <Link>Src\Parser\ModifierList.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\AbstractParser.cs">
+      <Link>Src\Parser\AbstractParser.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\IParser.cs">
+      <Link>Src\Parser\IParser.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\CSharp\CSharpParser.cs">
+      <Link>Src\Parser\CSharp\CSharpParser.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\CSharp\Parser.cs">
+      <Link>Src\Parser\CSharp\Parser.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\VBNet\ParamModifierList.cs">
+      <Link>Src\Parser\VBNet\ParamModifierList.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\VBNet\Parser.cs">
+      <Link>Src\Parser\VBNet\Parser.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\VBNet\VBNetParser.cs">
+      <Link>Src\Parser\VBNet\VBNetParser.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Ast\INode.cs">
+      <Link>Src\Ast\INode.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Ast\INullable.cs">
+      <Link>Src\Ast\INullable.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Ast\Generated.cs">
+      <Link>Src\Ast\Generated.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Ast\TypeReference.cs">
+      <Link>Src\Ast\TypeReference.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Ast\AbstractNode.cs">
+      <Link>Src\Ast\AbstractNode.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Ast\Enums.cs">
+      <Link>Src\Ast\Enums.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Ast\General\CompilationUnit.cs">
+      <Link>Src\Ast\General\CompilationUnit.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Ast\General\BlockStatement.cs">
+      <Link>Src\Ast\General\BlockStatement.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Ast\General\LocalVariableDeclaration.cs">
+      <Link>Src\Ast\General\LocalVariableDeclaration.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Ast\General\PrimitiveExpression.cs">
+      <Link>Src\Ast\General\PrimitiveExpression.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Ast\General\Statement.cs">
+      <Link>Src\Ast\General\Statement.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Ast\General\Expression.cs">
+      <Link>Src\Ast\General\Expression.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\PrettyPrinter\AbstractPrettyPrintOptions.cs">
+      <Link>Src\PrettyPrinter\AbstractPrettyPrintOptions.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\PrettyPrinter\IOutputAstVisitor.cs">
+      <Link>Src\PrettyPrinter\IOutputAstVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\PrettyPrinter\NodeInformVisitor.cs">
+      <Link>Src\PrettyPrinter\NodeInformVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\PrettyPrinter\AbstractOutputFormatter.cs">
+      <Link>Src\PrettyPrinter\AbstractOutputFormatter.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\PrettyPrinter\SpecialNodesInserter.cs">
+      <Link>Src\PrettyPrinter\SpecialNodesInserter.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\PrettyPrinter\CSharp\PrettyPrintOptions.cs">
+      <Link>Src\PrettyPrinter\CSharp\PrettyPrintOptions.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\PrettyPrinter\CSharp\CSharpOutputVisitor.cs">
+      <Link>Src\PrettyPrinter\CSharp\CSharpOutputVisitor.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\PrettyPrinter\CSharp\OutputFormatter.cs">
+      <Link>Src\PrettyPrinter\CSharp\OutputFormatter.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\PrettyPrinter\VBNet\VBNetOutputFormatter.cs">
+      <Link>Src\PrettyPrinter\VBNet\VBNetOutputFormatter.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\PrettyPrinter\VBNet\VBNetPrettyPrintOptions.cs">
+      <Link>Src\PrettyPrinter\VBNet\VBNetPrettyPrintOptions.cs</Link>
+    </Compile>
+    <Compile Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\PrettyPrinter\VBNet\VBNetOutputVisitor.cs">
+      <Link>Src\PrettyPrinter\VBNet\VBNetOutputVisitor.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Makefile" />
     <None Include="packages.config" />
     <None Include="winbuilddebug.bat" />
+    <None Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\BuildKeywords.pl">
+      <Link>Src\Lexer\BuildKeywords.pl</Link>
+    </None>
+    <None Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\CSharp\KeywordList.txt">
+      <Link>Src\Lexer\CSharp\KeywordList.txt</Link>
+    </None>
+    <None Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Lexer\VBNet\KeywordList.txt">
+      <Link>Src\Lexer\VBNet\KeywordList.txt</Link>
+    </None>
+    <None Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\gen.bat">
+      <Link>Src\Parser\gen.bat</Link>
+    </None>
+    <None Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\CSharp\trace.txt">
+      <Link>Src\Parser\CSharp\trace.txt</Link>
+    </None>
+    <None Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\CSharp\cs.ATG">
+      <Link>Src\Parser\CSharp\cs.ATG</Link>
+    </None>
+    <None Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\VBNet\VBNET.ATG">
+      <Link>Src\Parser\VBNet\VBNET.ATG</Link>
+    </None>
+    <None Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\Frames\SharpCoco.exe">
+      <Link>Src\Parser\Frames\SharpCoco.exe</Link>
+    </None>
+    <None Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\Frames\Parser.frame">
+      <Link>Src\Parser\Frames\Parser.frame</Link>
+    </None>
+    <None Include="SharpDevelop\src\Libraries\NRefactory\Project\Src\Parser\Frames\Scanner.frame">
+      <Link>Src\Parser\Frames\Scanner.frame</Link>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChangeLog.txt" />

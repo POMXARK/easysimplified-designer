@@ -1,0 +1,3 @@
+[submodule "SharpDevelop"]
+	path = SharpDevelop
+	url = https://github.com/MakiWolf/SharpDevelop.git
