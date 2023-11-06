@@ -4,11 +4,6 @@ easysimplified-designer is an effort to get the [monowinforms-designer](https://
 
 The fork has removed Mono.Design to compile again.
 
-#### Building from Source
-=== Linux ===
-
-make && make run
-
 ##### CI mainfest Ubuntu
 Take also a look at [the CI manifest](/.github/workflows/ubuntu.yml).
 
