@@ -21,4 +21,4 @@ run winbuilddebug.bat
 An old version of NRefactory from Sharpdevelop (git submodule) is still used and compiled from source code. Updating to an newer version is also not recommented, because NRefactory has been archived now.
 
 #### Discussion, Bugs, Patches
-https://github.com/MakiWolf/easysimplified-designer/issues (submit bugs and patches here)
+https://github.com/easysimplified/easysimplified-designer/issues (submit bugs and patches here)
